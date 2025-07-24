@@ -1,6 +1,17 @@
+# create transactions
 POST http://localhost:8080/transactions
 Content-Type: application/json
 
 {
-    "prompt": "Criei um sistema e cobrei R$ 20000"
+    "prompt": "Vanessa conseguiu um sistema para gente desenvolver, cobramos 60000"
 }
+
+###
+
+# get transactions recents
+GET http://localhost:8080/transactions/recent
+
+###
+
+# get transactions
+GET http://localhost:8080/transactions?name=&categories=&pageIndex=0
