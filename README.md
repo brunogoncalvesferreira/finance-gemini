@@ -1,5 +1,3 @@
-Claro! Aqui está uma versão mais profissional e organizada do seu README:
-
 ---
 
 # 💰 IA Finanças - Gemini
