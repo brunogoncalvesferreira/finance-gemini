@@ -33,7 +33,7 @@ export async function transactionGenerateIa(prompt: string) {
   })
 
   if (!response.text) {
-    throw new Error('Erro ao gerar responta do Gemini IA')
+    throw new Error('Erro ao gerar resposta do Gemini IA')
   }
 
   return response.text

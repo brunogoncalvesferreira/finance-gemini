@@ -25,8 +25,12 @@ export async function getAllTransactions(
         },
       },
 
-      skip: Number(pageIndex) * 10,
-      take: 10,
+      skip: Number(pageIndex) * 3,
+      take: 3,
+
+      orderBy: {
+        date: 'desc',
+      },
     })
 
     const totalCount = await prisma.transaction.count({
@@ -40,7 +44,7 @@ export async function getAllTransactions(
       },
     })
 
-    const pages = Math.ceil(totalCount / 10) || 1
+    const pages = Math.ceil(totalCount / 3) || 1
 
     return reply.status(200).send({
       transactions,

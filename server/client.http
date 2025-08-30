@@ -3,7 +3,7 @@ POST http://localhost:8080/transactions
 Content-Type: application/json
 
 {
-    "prompt": "Vanessa conseguiu um sistema para gente desenvolver, cobramos 60000"
+    "prompt": "Eu tomei cafe da manha e paguei 15,00"
 }
 
 ###
